@@ -3,45 +3,43 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>CityGuesser</title>
 </head>
 <body>
-	<video autoplay muted loop id="bg-video">
-  		<source src="img/bg-video_1.mp4" type="video/mp4">
+	<video muted autoplay loop id="bg-video">
+  		<source src="img/bg-video-blur.mp4" type="video/mp4">
 	</video>
-
 	<div class="container header">
-		<div class="row justify-content-center">
-			<div class="col-12 text-uppercase text-center">
-				<h1 id="game-name">CityGuesser</h1>
+		<div class="row">
+			<div class="col-12">
+				<h1 class="game-name text-uppercase">CityGuesser</h1>
 			</div>
 		</div>
 	</div>
 
 	<div class="container main">
-		<div class="row justify-content-xl-left justify-content-center">
-			<div class="offset-0 col-12 offset-xxl-3 col-xxl-9 test">
-				<label class="form-label text-uppercase">enter your name:</label>
+		<div class="row justify-content-left">
+			<div class="col-xxl-6 offset-xxl-2 col-sm-4 offset-sm-3 col-xs-12 offset-xs-0 input-title test">
+				<label for="#">Enter your name:</label>
 			</div>
 		</div>
-
 		<div class="row justify-content-center">
-			<div class="col-12 col-xxl-6 test">
-				<input type="text" class="form-control rounded-pill" id="name-form">
+			<div class="col-xxl-8 col-md-6 col-sm-6 test">
+				<input type="text" class="input-name">
 			</div>
 		</div>
-
 		<div class="row justify-content-center">
-			<div class="col-12 text-center test">
-				<button class="btn btn-primary rounded-pill text-uppercase" id="play-btn">play<!-- <img src="img/play-btn.png" alt="2" width="40" height="48"> --></button>
+			<div class="col-md-6 content-justify-center test">
+				<button class="play-btn">Play</button>
 			</div>
 		</div>
-
 		<div class="row justify-content-center">
-			<div class="col-12 test text-center">
-				<button class="btn btn-link text-uppercase text-dark" id="instruction">how to play?</button>
+			<div class="col-md-3 instruction test">
+				<button class="instr-btn">how to play?</button>
 			</div>
 		</div>
 	</div>
